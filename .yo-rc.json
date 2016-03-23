@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "covoiturage",
+    "packageName": "fr.iut.covoiturage",
+    "packageFolder": "fr/iut/covoiturage",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "gulp",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "bf3ff798321b649a77261d80a9d461d5c0352249",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}
