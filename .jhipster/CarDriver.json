@@ -1,0 +1,24 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "exp",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20160324104605",
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}

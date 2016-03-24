@@ -1,0 +1,25 @@
+{
+    "covoiturageApp": {
+        "carDriver" : {
+            "home": {
+                "title": "CarDrivers",
+                "createLabel": "Créer un nouveau CarDriver",
+                "createOrEditLabel": "Créer ou éditer un CarDriver",
+                "search": "Search for CarDriver"
+            },
+            "created": "Un nouveau CarDriver a été créé avec l'identifiant {{ param }}",
+            "updated": "Le CarDriver avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le CarDriver avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le CarDriver {{ id }} ?"
+            },
+            "detail": {
+                "title": "CarDriver"
+            },
+            "firstName": "FirstName",
+            "lastName": "LastName",
+            "exp": "Exp"
+        }
+    }
+}
+

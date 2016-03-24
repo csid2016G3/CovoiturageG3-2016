@@ -1,0 +1,24 @@
+{
+    "covoiturageApp": {
+        "carDriver" : {
+            "home": {
+                "title": "CarDrivers",
+                "createLabel": "Create a new CarDriver",
+                "createOrEditLabel": "Create or edit a CarDriver",
+                "search": "Search for CarDriver"
+            },
+            "created": "A new CarDriver is created with identifier {{ param }}",
+            "updated": "A CarDriver is updated with identifier {{ param }}",
+            "deleted": "A CarDriver is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete CarDriver {{ id }}?"
+            },
+            "detail": {
+                "title": "CarDriver"
+            },
+            "firstName": "FirstName",
+            "lastName": "LastName",
+            "exp": "Exp"
+        }
+    }
+}
