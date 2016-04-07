@@ -1,0 +1,74 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myDriverLabel" translate="covoiturageApp.driver.home.createOrEditLabel">Create or edit a Driver</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="driver.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="covoiturageApp.driver.driverFirstName" for="field_driverFirstName">DriverFirstName</label>
+            <input type="text" class="form-control" name="driverFirstName" id="field_driverFirstName"
+                    ng-model="driver.driverFirstName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="covoiturageApp.driver.driverLastName" for="field_driverLastName">DriverLastName</label>
+            <input type="text" class="form-control" name="driverLastName" id="field_driverLastName"
+                    ng-model="driver.driverLastName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="covoiturageApp.driver.driverPhone" for="field_driverPhone">DriverPhone</label>
+            <input type="text" class="form-control" name="driverPhone" id="field_driverPhone"
+                    ng-model="driver.driverPhone"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="covoiturageApp.driver.driverAddress" for="field_driverAddress">DriverAddress</label>
+            <input type="text" class="form-control" name="driverAddress" id="field_driverAddress"
+                    ng-model="driver.driverAddress"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="covoiturageApp.driver.driverMail" for="field_driverMail">DriverMail</label>
+            <input type="text" class="form-control" name="driverMail" id="field_driverMail"
+                    ng-model="driver.driverMail"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="covoiturageApp.driver.driverAge" for="field_driverAge">DriverAge</label>
+            <input type="number" class="form-control" name="driverAge" id="field_driverAge"
+                    ng-model="driver.driverAge"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="covoiturageApp.driver.driverExperience" for="field_driverExperience">DriverExperience</label>
+            <input type="number" class="form-control" name="driverExperience" id="field_driverExperience"
+                    ng-model="driver.driverExperience"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="covoiturageApp.driver.driverExp" for="field_driverExp">DriverExp</label>
+            <input type="number" class="form-control" name="driverExp" id="field_driverExp"
+                    ng-model="driver.driverExp"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

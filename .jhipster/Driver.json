@@ -1,0 +1,57 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "driverPathList",
+            "otherEntityName": "path",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "driver"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "driverFirstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "driverLastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "driverPhone",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "driverAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "driverMail",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "driverAge",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "driverExperience",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "driverExp",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20160407143952",
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}

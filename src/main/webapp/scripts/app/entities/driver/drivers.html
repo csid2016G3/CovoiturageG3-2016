@@ -1,0 +1,70 @@
+<div>
+    <h2 translate="covoiturageApp.driver.home.title">Drivers</h2>
+    <jh-alert></jh-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="driver.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span 
+                        translate="covoiturageApp.driver.home.createLabel">Create new Driver
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="covoiturageApp.driver.driverFirstName">DriverFirstName</span></th>
+                    <th><span translate="covoiturageApp.driver.driverLastName">DriverLastName</span></th>
+                    <th><span translate="covoiturageApp.driver.driverPhone">DriverPhone</span></th>
+                    <th><span translate="covoiturageApp.driver.driverAddress">DriverAddress</span></th>
+                    <th><span translate="covoiturageApp.driver.driverMail">DriverMail</span></th>
+                    <th><span translate="covoiturageApp.driver.driverAge">DriverAge</span></th>
+                    <th><span translate="covoiturageApp.driver.driverExperience">DriverExperience</span></th>
+                    <th><span translate="covoiturageApp.driver.driverExp">DriverExp</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="driver in drivers track by driver.id">
+                    <td><a ui-sref="driver.detail({id:driver.id})">{{driver.id}}</a></td>
+                    <td>{{driver.driverFirstName}}</td>
+                    <td>{{driver.driverLastName}}</td>
+                    <td>{{driver.driverPhone}}</td>
+                    <td>{{driver.driverAddress}}</td>
+                    <td>{{driver.driverMail}}</td>
+                    <td>{{driver.driverAge}}</td>
+                    <td>{{driver.driverExperience}}</td>
+                    <td>{{driver.driverExp}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="driver.detail({id:driver.id})"
+                                    class="btn btn-info btn-sm"> 
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="driver.edit({id:driver.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="driver.delete({id:driver.id})"
+                                    class="btn btn-danger btn-sm">                                    
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
